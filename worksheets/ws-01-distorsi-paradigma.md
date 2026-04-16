@@ -61,94 +61,103 @@ Dalam DSR, artefak **bukan tujuan akhir** — ia adalah instrumen untuk menghasi
 ## Template A.1 — Research Mindset Self-Assessment
 
 ```
-Nama Peneliti    : ____________________
-Tanggal          : ____________________
+Nama Peneliti    : Fakhri Fahmi R  
+Tanggal          : 16 April 2026  
 
 1. Ketika membaca klaim "metode X 95% akurat":
-   - Pertanyaan pertama saya: ____________________
-   - Data yang dibutuhkan untuk verifikasi: ____________________
+   - Pertanyaan pertama saya: Dataset apa yang digunakan dan apakah ada perbandingan dengan metode lain?
+   - Data yang dibutuhkan untuk verifikasi: Dataset asli, metode evaluasi, confusion matrix, serta hasil perbandingan dengan baseline model
 
 2. Posisi paradigma:
-   - Pendekatan: [ ] Positivis  [ ] Interpretivis  [ ] Design Science  [ ] Mixed
-   - Alasan: ____________________
+   - Pendekatan: [ ] Positivis  [ ] Interpretivis  [x] Design Science  [ ] Mixed
+   - Alasan: Penelitian di bidang teknologi informasi sering berfokus pada pembangunan sistem atau artefak (seperti aplikasi atau model) untuk menyelesaikan masalah nyata dan menguji performanya
 
 3. Identifikasi distorsi:
-   - Asumsi tersembunyi: ____________________
-   - Sumber bias potensial: ____________________
-   - Langkah mitigasi: ____________________
+   - Asumsi tersembunyi: Dataset dianggap representatif terhadap kondisi nyata
+   - Sumber bias potensial: Bias dataset (tidak seimbang), overfitting, dan pemilihan metrik evaluasi yang tidak tepat
+   - Langkah mitigasi: Menggunakan dataset yang beragam, melakukan cross-validation, serta membandingkan dengan beberapa metode lain
 
 4. Komitmen etika:
-   - Data yang tidak akan dimanipulasi: ____________________
-   - Batasan yang diakui sejak awal: ____________________
-```
+   - Data yang tidak akan dimanipulasi: Data eksperimen dan hasil pengujian model
+   - Batasan yang diakui sejak awal: Keterbatasan dataset, ruang lingkup penelitian, serta keterbatasan metode yang digunakan
 
 ---
 
-## Latihan 1 — Identifikasi Distorsi
+---
 
-Pilih satu paper riset di bidang TI yang mengklaim "metode X meningkatkan performa." Telusuri setiap tahap Research Trust Model.
-
-> **Panduan pencarian paper:** Gunakan [IEEE Xplore](https://ieeexplore.ieee.org), [ACM Digital Library](https://dl.acm.org), atau Google Scholar. Pilih paper **tahun 2020 ke atas**, di topik yang Anda minati: deteksi anomali, klasifikasi citra, NLP, keamanan siber, IoT, dsb.
->
-> **Contoh domain TI:** "Deteksi anomali lalu-lintas jaringan menggunakan CNN — akurasi meningkat 94% vs baseline SVM 87%." Distorsi potensial: apakah dataset normal/anomali seimbang? Apakah hanya diuji pada satu vendor traffic?
+#  Latihan 1 — Identifikasi Distorsi
 
 **Paper yang dipilih:**
-> Judul: _______________________________________________
-> Penulis (Tahun): ______________________________________
-> Sumber/Link DOI: _____________________________________
-
-| Tahap | Apa yang Dilakukan | Potensi Distorsi |
-|-------|-------------------|-----------------|
-| Reality → Data | *Contoh: Kumpulkan log server 30 hari* | *Contoh: Hanya ambil jam sibuk* |
-| Data → Processing | | |
-| Processing → Analysis | | |
-| Analysis → Inference | | |
-| Inference → Knowledge | | |
-
-**Distorsi paling besar di tahap:** ________________________
-
-**Dua distorsi spesifik yang teridentifikasi:**
-1. ___________________________________________________
-2. ___________________________________________________
+- **Judul:** Aplikasi Web Informasi Layanan Haji pada Kementerian Haji dan Umrah Kota Sukabumi dengan Menggunakan Framework Zachman  
+- **Penulis (Tahun):** Zainul Bahar, Sudin Saepudin (2026)  
+- **DOI:** https://doi.org/10.61124/sinta.v3i1.140  
 
 ---
 
-## Latihan 2 — Analisis Kasus Etika
+## Tabel Analisis Distorsi
 
-Skenario: Seorang peneliti menemukan bahwa jika 3 data point outlier dihapus, hasil eksperimennya menjadi signifikan. Dengan outlier, hasilnya tidak signifikan.
+| Tahap | Apa yang Dilakukan | Potensi Distorsi |
+|------|-------------------|-----------------|
+| Reality → Data | Observasi langsung + studi literatur terkait pelayanan haji | Data hanya dari satu instansi (Sukabumi), tidak representatif |
+| Data → Processing | Pengolahan kebutuhan sistem menggunakan Framework Zachman | Interpretasi kebutuhan bisa subjektif (bias peneliti) |
+| Processing → Analysis | Analisis kebutuhan sistem, pembuatan model (UML, ERD) | Tidak ada validasi eksternal terhadap model |
+| Analysis → Inference | Menyimpulkan bahwa sistem web meningkatkan efisiensi & transparansi | Tidak ada eksperimen kuantitatif |
+| Inference → Knowledge | Klaim bahwa sistem dapat meningkatkan pelayanan publik | Generalisasi berlebihan |
+
+---
+
+**Distorsi paling besar di tahap:**  
+> Analysis → Inference  
+
+**Dua distorsi spesifik:**
+1. Tidak ada pengujian empiris (tidak ada data sebelum vs sesudah sistem)  
+2. Generalisasi hanya dari satu studi kasus  
+
+---
+
+#  Latihan 2 — Analisis Kasus Etika
 
 | Perspektif | Analisis |
 |------------|---------|
-| Kejujuran ilmiah | *Contoh: Laporkan kedua versi (dengan dan tanpa outlier)* |
-| Transparansi | |
-| Peer review | |
-
-**Keputusan akhir dan justifikasi:**
-> ___________________________________________________
+| Kejujuran ilmiah | Peneliti harus melaporkan hasil dengan dan tanpa outlier |
+| Transparansi | Harus dijelaskan alasan penghapusan outlier |
+| Peer review | Akan dipertanyakan jika data dihapus tanpa alasan jelas |
 
 ---
 
-## Latihan 3 — Posisi Paradigma
+**Keputusan akhir dan justifikasi:**
 
-**Topik riset:** ________________________________________
+Outlier tidak boleh dihapus hanya untuk membuat hasil signifikan. Peneliti harus menyajikan kedua hasil (dengan dan tanpa outlier) serta memberikan alasan ilmiah yang jelas agar menjaga integritas penelitian.
 
-> **Skala 1–5:** 1 = tidak sesuai sama sekali dengan topik ini, 5 = sangat sesuai dan dominan digunakan pada riset bertopik serupa.
+---
+
+#  Latihan 3 — Posisi Paradigma
+
+**Topik riset:**  
+Perancangan sistem informasi layanan haji berbasis web menggunakan Framework Zachman  
+
+---
+
+## Analisis Paradigma
 
 | Kriteria | Positivis | Interpretivis | Design Science |
 |----------|-----------|---------------|----------------|
-| Kesesuaian dengan topik (1–5) | *Contoh: 4 — topik kuantitatif, cocok uji hipotesis* | *Contoh: 2 — topik tidak studi makna/konteks* | *Contoh: 5 — membangun artefak untuk uji klaim* |
-| Jenis data yang dikumpulkan | *Metrik numerik, log eksperimen* | *Wawancara, observasi kualitatif* | *Hasil uji artefak, komparasi kinerja* |
-| Limitasi paradigma | | | |
-
-**Paradigma yang dipilih:** _____________________________
-**Alasan:** ____________________________________________
+| Kesesuaian (1–5) | 2 — tidak ada uji hipotesis | 2 — tidak fokus makna sosial | 5 — membangun artefak |
+| Jenis data | Data kebutuhan sistem | Observasi pengguna | Model sistem, ERD, UML |
+| Limitasi | Tidak ada eksperimen | Kurang konteks sosial | Minim validasi empiris |
 
 ---
 
-## Refleksi
+**Paradigma yang dipilih:**  
+> Design Science Research (DSR)  
 
-> Sebelum membaca materi ini, apakah pernah mempertanyakan klaim "95% akurat"? Setelah memahami rantai distorsi, pertanyaan apa yang sekarang akan diajukan saat membaca paper?
+**Alasan:**  
+Penelitian ini membangun artefak berupa sistem informasi berbasis web untuk menyelesaikan masalah nyata, sehingga sesuai dengan pendekatan DSR.
 
-**Jawaban:**
-> ___________________________________________________
-> ___________________________________________________
+---
+
+#  Refleksi
+
+Sebelumnya, klaim seperti “sistem meningkatkan efisiensi” sering diterima tanpa dipertanyakan. Setelah memahami rantai distorsi, saya akan mempertanyakan bagaimana data dikumpulkan, apakah ada bias, apakah dilakukan pengujian empiris, serta apakah hasil dapat digeneralisasi.
+
+---
