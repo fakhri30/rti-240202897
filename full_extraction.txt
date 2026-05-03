@@ -1,0 +1,322 @@
+
+================================================================================
+FILE: 1608-Article Text-4049-4292-10.pdf
+================================================================================
+ 
+DOI: http://dx.doi.org/10.21580/jid.35.2.1608                                                          225 
+ 
+EFEKTIVITAS SISTEM INFORMASI DAN KOMPUTERISASI 
+HAJI TERPADU (SISKOHAT) DALAM PENYELENGGARAAN 
+IBADAH HAJI  
+ 
+Zahrotun Munawaroh, M. Mudhofi, Dedy Susanto 
+MTs Darul Falah Pati 
+Email: el.zahra294@gmail.com; hm.mudhofi@yahoo.co.id; dedyssosi@gmail.com 
+ 
+Abstract 
+The purpose of this research consist of: 1). How the effectivity of 
+implementation hajj in regional office of the ministry of religion in Jawa 
+Tengah Province, 2), What the supporting and obstacle factors of SISKOHAT 
+implementastion. This research is quali tative describtive research. The 
+method of collecting data use three method, there are observation, interview, 
+and documentation.  The outcame from the research shows that Siskohat 
+implementation is really effective to increase services performance of hajj 
+implementation in regional office of the ministry of religion in Jawa Tengah 
+Province. Integrated Siskohat with 17 BPS BPIH with host in center of 
+ministry of religion. The Siskohat  process include registration and saving 
+database of worshipers and officer s, paspor and visa process, publish the 
+administration document (DAPIH), online payment of BPIH by BPS BPIH, 
+BPIH acountance system, pramanifets kolter making, flight monitoring, 
+healthiness monitoring, and monitoring of hajj operational in Indonesia and 
+Arab Saudi. 
+*** 
+Penelitian ini mengkaji; 1) Bagaimana Efektivitas dalam penyelenggaraan 
+ibadah haji di Kantor Wilayah Kementerian Agama Provinsi Jawa Tengah, 2) 
+Apa yang menjadi faktor pendukung dan penghambat penerapan SISKOHAT. 
+Jenis penelitian ini adalah  penelitian kualitatif deskripstif. Proses pencariaan 
+data melalui tiga cara yaitu observasi, wawancara dan dokumentasi.  
+Kesimpulan yang diperoleh, bahwa penerapan SISKOHAT sangat efektif 
+dalam meningkatkan kinerja pelayanan penyelenggaraan ibadah haji di 
+Kanwil Kemenag Provinsi Jawa Tengah. SISKOHAT terintegrasi dengan 17 
+BPS BPIH dan Kantor Kementerian Agama di seluruh Indonesia dengan Host 
+pusat di Kementerian Agama Pusat. Pelayanan SISKOHAT mencakup 
+pendaftaran dan penyimpanan database jamaah dan petuga s haji, 
+pemrosesan dokumen paspor dan pemvisaan, penerbitan Dokumen 
+Administrasi Perjalanan Ibadah Haji (DAPIH), pembayaran BPIH oleh BPS 
+BPIH secara online, pelaksanaan sistem akuntansi BPIH, penyususnan 
+pramanifest kloter, monitoring penerbangan, pemanta uan kesehatan haji, 
+serta pemantauan operasional haji di Tanah Air dan di Arab Saudi. 
+ 
+Keywords:  Effectivity, information and computerization system, 
+implementation of hajj 
+ Zahrotun Munawaroh, dkk    Efektivitas Sistem Informasi dan Komputerisasi ... 
+ 
+ JURNAL ILMU DAKWAH, Vol. 35, No.2, Juli – Desember 2015 ISSN 1693-8054 226 
+A. Pendahuluan 
+Haji merupakan salah satu dari kelima aspek rukun Islam, yang mana 
+tidak sempurna Islam seseorang yang mampu menunaikan haji sampai ia 
+berhaji.1Haji pada hakekatnya merupakan aktifitas suci yang 
+pelaksanaannya diwajibkan oleh Allah kepada seluruh umat Islam yang 
+telah mencapai istitho’ah (mampu), disebut rangkaian suci karena seluruh 
+rangkaian kegiatannya adalah ibadah.  
+Ibadah haji merupakan ibadah terfavorit bagi sebagian kalangan 
+masyarakat Ind onesia. Sebagai negara dengan penduduk mayoritas 
+muslim, sudah tentu setiap tahunnya ribuan jamaah haji diberangkatkan 
+dari Indonesia untuk melaksanakan ibadah haji di Tanah Suci. Akibatnya 
+peningkatan pendaftaran jamaah haji dari tahun ke tahun begitu pes at. 
+Pada tahun 2015 jumlah pendaftar di Jawa Tengah mencapai angka 
+458.650 jiwa. 2Angka pendaftar yang setiap tahunnya mengalami 
+peningkatan serta adanya pembatasan quota jamaah haji yang berangk at 
+ke Tanah Suci, menyebabkan penumpukan calon jamaah haji yang semakin 
+bertambah panjang. kondisi ini menjadikan daftar tunggu ( waiting list ) 
+keberangkatan ibadah haji ke Baitullah semakin panjang hingga mencapai 
+19-20 tahun. Waiting list dari tahun ke ta hun yang telah mencapai puluhan 
+tahun tidak mungkin dilakukan dengan cara manual, konvensional, dengan 
+mengandalkan tumpukan berkas ataupun menggunakan sistem komputer 
+yang tidak terhubung oleh jaringan. Hal ini akan memperlambat kinerja 
+lembaga pelayanan bagi publik di lembaga Kementerian Agama. 
+Pentingnya peranan informasi dan teknologi dalam pengelolaan 
+suatu pelayanan penyelenggaraan ibadah haji merupakan hal yang mutlak 
+dibutuhkan. Faktor pemicunya ialah semakin majunya masyarakat 
+Indonesia karena berb agai faktor seperti pendidikan, demokrasi politik, 
+pembangunan ekonomi serta berbagai macam permasalahan yang bentuk, 
+jenis dan intensitasnya berbeda dari masa -masa sebelumnya. Sehingga 
+Bidang Penyelenggaraan Ibadah Haji di Kantor Wilayah Kementerian 
+Agama Provinsi Jawa Tengah harus mampu memberikan peningkatan 
+dalam hal pelayanan informasi serta pengelolaan sistem pelayanan manual 
+menuju sistem pelayanan pendataan calon jamaah haji secara otomatis. 
+Oleh karena itu, t
+
+================================================================================
+FILE: 4_paper+140 (1).pdf
+================================================================================
+SINTA Jurnal Sistem Informasi dan Teknologi Komputasi  
+Volume 3 Nomor 1 Januari 2026 [page: 24-35] 
+DOI: https://doi.org/10.61124/sinta.v3i1.140 
+ 
+ISSN 3032-5072 | jurnalsinta.id 24 
+Aplikasi Web Informasi Layanan Haji pada Kementerian Haji dan Umrah 
+Kota Sukabumi dengan Menggunakan Framework Zachman 
+Zainul Bahar*1, Sudin Saepudin1 
+1Sistem Informasi, Universitas Nusa Putra, Indonesia 
+*e-mail: zainul.bahar_si24@nusaputra.ac.id  
+ 
+Abstrak  
+Pelayanan haji di Kementerian Haji dan Umrah Kota Sukabumi masih terkendala beberapa 
+masalah, terutama dalam hal pelayanan informasi, transparansi proses pelayanan, serta belum 
+tersedianya Aplikasi Web resmi yang mampu menyajikan data dan mempermudah pelayanan. 
+Proses komunikasi yang terkendala harus datang langsung ke kantor dan dilakukan pada jam kantor 
+saja, yang tentu bagi calon jemaah yang bekerja sebagai karyawan tentu merasa kesulitan, sehingga 
+menimbulkan keterlambatan informasi dan potensi ketidakefisienan. penelitian ini bertujuan untuk 
+memetakan kebutuhan arsitektur sistem informasi pelayanan haji dengan me nggunakan 
+Framework Zachman sebagian acuan analisis. Framework ini digunakan karena mampu 
+memetakan kebutuhan dan memberikan gambaran menyeluruh dari berbagai perspektif, mulai dari 
+perencanaan, kebutuhan bisnis, desain sistem, hingga model teknis. Sehingg a metode seperti ini 
+dapat membantu menyusun gambaran strategi pelayanan, proses, alur data, aktor hingga rancangan 
+model informasi seperti Entity Relationship Diagram (ERD). Diharapkan melalui penelitian ini 
+dapat menghasilkan sebuah arsitektur sistem Web  yang dapat meningkatkan kualitas pelayanan 
+publik, mempercepat akses layanan informasi haji dan memberikan efisiensi internal pada 
+Kementerian Haji dan Umrah Kota Sukabumi. Dengan demikian mampu meningkatkan kepuasan 
+dan kepercayaan masyarakat. 
+Kata kunci: pelayanan haji, sistem informasi, Enterprise, Framework Zachman, 
+ 
+Abstract  
+Hajj services at the Ministry of Hajj and Umrah in Sukabumi City are currently hindered by several 
+issues, particularly regarding information services, transparency in the service process, and the 
+absence of an official web application capable of presentin g data and facilitating services. The 
+communication process is constrained by the requirement for pilgrims to visit the office in person 
+during working hours, which poses a significant challenge for those employed as full-time workers. 
+This leads to inform ation delays and potential inefficiencies. This research aims to map the 
+information system architecture requirements for Hajj services using the Zachman Framework as 
+an analytical reference. This framework is utilized for its ability to map requirements a nd provide 
+a comprehensive overview from various perspectives, ranging from planning and business needs 
+to system design and technical models. Consequently, this method assists in structuring the service 
+strategy, processes, data flows, and actors, as well  as information model designs such as Entity 
+Relationship Diagrams (ERD). It is expected that this research will produce a web system 
+architecture that can enhance the quality of public services, accelerate access to Hajj information 
+services, and provide internal efficiency for the Ministry of Hajj and Umrah in Sukabumi City, 
+thereby increasing public satisfaction and trust. 
+ 
+Keywords: Hajj services, information system, Enterprise, Zachman Framework. 
+1. PENDAHULUAN  
+Ibadah haji merupakan rukun Islam yang kelima yang tentu nya menjadi impian bagi setiap 
+umat Islam untuk menunaikan nya [1]. Akan tetapi agama Islam tidak pernah memberatkan bagi 
+penganutnya untuk melakukan suatu ibadah di luar kemampuan nya, baik secara fisik maupun 
+materinya. Oleh karena nya ibadah haji ini hanya menjadi kewajiban bagi mereka umat Islam yang 
+sudah mampu secara materi dan fisik nya, karena ibadah haji bukan hanya bicara tentang biaya yang 
+tinggi akan tetapi mencakup juga fisik yang kuat dan prima untuk menunaikan nya. SINTA Jurnal Sistem Informasi dan Teknologi Komputasi  
+Volume 3 Nomor 1 Januari 2026 [page: 24-35] 
+DOI: https://doi.org/10.61124/sinta.v3i1.140 
+ 
+ISSN 3032-5072 | jurnalsinta.id 25 
+Di sinilah peran pemerintah dalam hal ini Kementerian Haji dan Umrah Kota Sukabumi 
+untuk memfasilitasi semuanya demi kelancaran dan keselamatan jemaah yang menunaikan ibadah 
+haji tersebut. Meliputi pelayanan saat di tanah air dan nanti saat di tanah suci. Di antaranya 
+pelayanan saat masih di tanah air meliputi saat pelayanan pertama kali daftar di mana calon jemaah 
+haji wajib menerima pelayanan yang ramah dan baik dari pada petugas haji dan mendapatkan 
+informasi tentang ibadah haji dengan jelas dan lengkap [2]. Hingga pada saat nya nanti pada waktu 
+menjelang keberangkatan jemaah wajib mendapatkan informasi tentang biaya pelunasan ibadah haji 
+secara transparan dan jelas juga meliputi bimbingan manasik haji dari pihak kementerian agama 
+guna menjamin jemaah mempunyai pengetahuan tentang tata
+
+================================================================================
+FILE: 884-898-2-PB.pdf
+================================================================================
+ERROR: 'charmap' codec can't encode character '\u2010' in position 110: character maps to <undefined>
+
+================================================================================
+FILE: Analisis-Kualitas-Sistem-Informasi-Haji-Terpadu-Menggunakan-Metode-McCall.pdf
+================================================================================
+ Diterima Redaksi : 24-05-2022 | Selesai Revisi : 28-05-2022 | Diterbitkan Online : 31-05-2022 
+83 
+ 
+ 
+ 
+Terbit online pada laman web jurnal:  
+http://publishing-widyagama.ac.id/ejournal-v2/index.php/jointecs 
+ 
+Vol. 7 No. 2 (2022) 83 - 92 
+JOINTECS  
+(Journal of Information Technology 
+and Computer Science)  
+e-ISSN:2541-6448 p-ISSN:2541-3619 
+ 
+Analisis Kualitas Sistem Informasi Haji Terpadu Menggunakan Metode 
+McCall 
+Ahmad Farisi1, Rizani Teguh2, Ratih Lestari3 
+Program Studi Sistem Informasi, Fakultas Ilmu Komputer dan Rekayasa, Universitas Multi Data Palembang 
+1ahmadfarisi@mdp.ac.id, 2rizani_teguh@mdp.ac.id, 3ratih.lestari@mhs.mdp.ac.id 
+Abstract  
+This study measures the quality of information systems using the McCall method with a case study  of the Integrated Hajj 
+Information System called SIHAT at PT. Arraudhah Wisata Imani. After studying the literature and spreading the pre -
+research questionnaire, this research started by distributing Mc’Call’s questionnaires to 30 respondents. Furthermore , the 
+results were tested for validity and reliability values to obtain valid and reliable variables and indicators. These variable s 
+and indicators are then used to measure the quality value (Fa) of each variable. The measurement begins with the weighting 
+process of the variables and indicators through a questionnaire filled out by experts. The weighting uses a scale of 0.1 to 0 .5 
+for each variable of correctness, reliability, efficiency, integrity, and usability along with their indicators. The quality 
+measurement results show that the correctness factor is 58%, reliability is 30%, efficiency is 19%, integrity is 58% and 
+usability is 45%. Overall, the quality of SIHAT Arraudhah is at a value of 41% which is in the range of 41% -60%, which 
+means that SIHAT Arraudhah is of sufficient quality. 
+Keywords: analysis; quality; system; SIHAT; McCall. 
+Abstrak 
+Penelitian ini mengukur kualitas sistem informasi menggunakan metode McCall dengan studi kasus sistem informasi haji 
+terpadu (SIHAT) pada PT. Arraudhah Wisata Imani. Setelah melakukan studi literatur  dan menyebarkan kuesioner pra -
+penelitian, penelitian ini dimulai dengan menyebarkan kuesioner McCall terhadap 30 responden . Hasil pengisian kuesioner 
+diuji validitas dan reliabilitasnya untuk mendapatkan variabel dan indikator yang valid dan reliabel. Variabel dan indikator 
+tersebut selanjutnya digunakan untuk mengukur nilai kualitas (Fa) dari setiap variabel. Pengukuran tersebut dimu lai dengan 
+proses pembobotan variabel dan indikator melalui kuesioner yang diisi oleh pakar. Pembobotan tersebut menggunakan skala 
+0,1 sampai dengan 0,5 untuk setiap variabel correctness, reliability, efficiency, integrity, dan usability beserta indikatornya 
+masing-masing. Hasil pengukuran kualitas menunjukkan bahwa faktor correctness sebesar 58%, reliability sebesar 30%, 
+efficiency sebesar 19%, integrity sebesar 58% dan usability 45%. Secara keseluruhan kualitas SIHAT Arraudhah berada pada 
+nilai 41% yang berada pada rentang 41%-60% yang berarti SIHAT Arraudhah cukup berkualitas. 
+Kata kunci: analisis; kualitas; sistem; SIHAT; McCall. 
+Jurnal JOINTECS
+1. Pendahuluan  
+Negara Indonesia merupakan negara dengan mayoritas 
+penduduk beragama Islam. Salah satu rukun Islam ba gi 
+umat islam adalah melaksanakan ibadah haji bagi yang 
+mampu. Haji adalah berkunjung ke Baitullah (Ka’bah) 
+untuk melakukan amalan -amalan, antara lain: wukuf di 
+Arafah, mabit di Muzdalifah dan Mina, thawaf di 
+Ka’bah, sa’i, dan amalan lainnya pada masa tert entu 
+demi memenuhi panggilan Allah SWT dan   
+mengharapkan ridha -Nya [1]. Di Indonesia, saat ini 
+kuota haji normal per tahun sebelum pandemi 
+berjumlah 221.000 jamaah. N amun disebababkan 
+karena pandemi Covid19, maka saat ini kuota haji 
+dikurangi oleh Saudi Arabia selaku pelayan tanah suci 
+Makkah dan Madinah menjadi 100.051 jamaah. 
+Dengan jumlah kuota tersebut, sampai saat ini 
+Indonesia menjadi negara dengan kuota terbanya k di 
+dunia. 
+Kondisi besarnya kuota haji di Indonesia, diiringi juga 
+dengan semakin banyaknya jasa penyelenggaraan 
+Ahmad Farisi, Rizani Teguh, Ratih Lestari  
+(JOINTECS) Journal of Information Technology and Computer Science Vol . 7 No. 2 (2022) 83 – 92  
+ 
+(JOINTECS) Journal of Information Technology and Computer Science Vol . 7 No. 2 (2022) 83 – 92 
+84 
+ 
+ 
+bimbingan haji yang membantu jamaah haji mulai dari 
+kegiatan bimbingan manasik haji di tanah air hingga 
+pembimbingan ke tanah suci. Jasa bimbi ngan tersebut 
+dilakukan oleh Kelompok Bimbingan Ibadah Haji dan 
+Umrah (KBIHU) dan Penyelenggara Ibadah Haji 
+Khusus (PIHK). KBIHU merupakan penyelenggara 
+bimbingan haji reguler, sementara PIHK merupakan 
+penyelenggara haji khusus. Berdasarkan Keputusan 
+Menteri Agama Republik Indonesia  Nomor 811 Tahun 
+2020 Tentang Penetapan Izin Kelompok  Bimbingan 
+Sebagai Kelompok Bimbingan Ibadah Haji Dan  
+Umrah, data KBIHU seluruh Indonesia berjumlah 
+1.577 KBIHU. Dengan kenyataan besarnya kuota haji 
+diiringi dengan
+
+================================================================================
+FILE: hh,+FINISH+-+Edhy.pdf
+================================================================================
+Jurnal Innovation and Future Technology (IFTECH)     P-ISSN: 2656-1719  
+Vol.6 No.1 Tahun 2024        E-ISSN: 2656-2774  
+ 61 
+PERANCANGAN SISTEM INFORMASI PENDAFTARAN 
+HAJI DAN UMRAH PADA KBIH IBNU AQIL 
+MENGGUNAKAN METODE WATERFALL 
+Zainal Mustaqim1, Edhi Prayitno2  
+Program Studi Sistem Informasi, Universitas Nusa Mandiri,  
+Jl. Jatiwaringin No. 2, Cipinang Melayu, Jakarta Timur 
+e-mail: 1zainalmustaqim267@gmail.com, *2edhi.epo@nusamandiri.ac.id  
+Abstract   
+KBIH Ibnu Aqil is part of the Agus Salim Bogor Haji Foundation which operates in the field of training and 
+guidance for Hajj and Umrah  pilgrims. The registration system implemented by KBIH Ibnu Aqil is still 
+carried out by the congregation having to come directly to the foundation, this is felt to make it less easy for 
+the congregation to find out information regarding the details of the registration process, the costs incurred 
+and also the departure schedule related to the implementation of the Hajj and Umrah. Furthermore, the 
+process of creating the registration report takes a long time, because it is still done manually by recording it 
+in stages. Therefore, with these problems, a web-based registration information system is needed to overcome 
+problems in the current system, this aims to facilitate registration and dissemination of information. The 
+research method used was direct observa tion and interviews with the admin and chairman of KBIH. 
+Meanwhile, the software development method used is the waterfall method and the application creation uses 
+CodeIgniter as a PHP framework, and the database uses MySQL. The expected results from designing a web-
+based Hajj and Umrah registration information system at KBIH Ibnu Aqil are expected to improve the 
+services provided to pilgrims and become a solution to existing problems. 
+ 
+Keywords: Hajj and Umrah, Registration Information System, Web Based  
+PENDAHULUAN  
+Haji merupakan salah satu rukun ibadah dalam Agama Islam yang wajib ditunaikan 
+apabila memiliki kemampuan pada setiap tahun, s edangkan Umrah adalah ibadah sunnah yang 
+dapat dilaksanakan kapanpun sesuai keinginan. Pada dasarnya ibadah Haji dan Umrah itu sama 
+yang membedakannya hanya dari segi hukum, waktu dan pelaksanaannya  (Simbolon, N. N., & 
+Imsar. (2021). Jumlah jamaah yang melaksanakan Haji dan Umrah setiap tahunnya mengalami 
+peningkatan di seluruh dunia, salah satunya dari Indonesia yang merupakan negara dengan 
+mayoritas penduduk beragama Islam, di Indonesia sendiri penyelenggaraan Haji diatur di dalam 
+UU No. 13 tahun 2008, hal tersebut bertujuan agar pengelolaan pelaksanaan ibadah Haji dapat 
+berjalan dengan baik (Aswandi, B., 2021). Salah satu lembaga yang telah diakui oleh pemerintah 
+dalam memberikan pelayanan dan bimbingan dalam penyelenggaraan ibadah Haji dan Umrah 
+yaitu Kelompok Bimbingan Ibadah Haji (KBIH) sesuai dengan keputusan Menteri Agama No. 
+317 Tahun 2002, salah satu tug as dari KBIH sendiri yaitu memberikan pelayanan pendaftaran 
+Haji dan Umrah (Wahid, A., 2019). KBIH Ibnu Aqil merupakan bagian dari Yayasan Haji Agus 
+Salim Bogor yang bergerak d alam bidang pembinaan dan bimbingan untuk jamaah haji dan 
+umrah. Sistem pendaftaran KBIH Ibnu Aqil masih dilakukan secara manual dimana jamaah harus 
+datang langsung ke lokasi  sehingga kurang memudahkan jama ah dalam mengetahui informasi 
+terkait detail proses pendaftaran, biaya yang dikeluarkan dan juga jadwal keberangkatan . 
+Demikian juga dalam proses penyusunan laporan pendaftaran, laporan data jamaah dan lainnya 
+yang kurang optimal ketika dilakukan secara manual dengan cara merekap secara bertahap di 
+dalam aplikasi Microsoft Excel sehingga menghabiskan waktu yang cukup lama. 
+Penelitian sebelumnya dijelaskan bahwa selama ini sistem pendaftaran Haji masih 
+dilakukan secara konvensional, yaitu dengan datang langsung untuk melakukan pendaftaran, hal 
+tersebut dirasa kurang efektif karena memakan waktu, tenaga dan biaya bagi calon jamaah yang 
+ingin melakukan pendaftaran  (Yossika, C., & Febryansyah, R. , 2021). Berdasarkan temuan Jurnal Innovation and Future Technology (IFTECH)     P-ISSN: 2656-1719  
+Vol.6 No.1 Tahun 2024        E-ISSN: 2656-2774  
+ 62 
+masalah tersebut maka diperlukan sebuah sistem informasi yang dapat diartikan sistem buatan 
+yang berisi sekumpulan komponen dan manual komputerisasi yang terintegrasi untuk 
+mengumpulkan data, mengolah data, dan menghasilkan informasi bagi pengguna (Wibowo et al., 
+2023). 
+Tujuan dari perancangan sistem informasi ini yaitu untuk mengatasi permasalahan yang 
+terjadi pada proses pendaftaran yang sedang berjalan pada KBIH Ibnu Aqil  dengan 
+memanfaatkan sistem informasi pendaftaran berbasis web sehingga memudahkan jamaah dalam 
+mendapatkan informasi terkait pendaftaran Haji dan Umrah secara detail . S elain itu dengan 
+menyediakan media yang terkomputerisasi dapat menghasilkan informasi terkait jadwal 
+keberangkatan pelaksanaan Haji dan Umrah dan juga proses pembuatan laporan menjadi lebih 
+optimal dan cepat 
