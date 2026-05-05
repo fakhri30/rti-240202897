@@ -77,49 +77,44 @@ Membandingkan deep learning 2024 dengan decision tree sederhana tanpa justifikas
 ```
 LITERATURE MAPPING
 
-Topik      : Sistem Informasi Layanan Haji — E-Government & Enterprise Architecture
-Database   : ResearchGate, Google Scholar, Institutional Repository, DOI/Jurnal Online
-Query      : ("Sistem Informasi Haji" OR "Hajj Information System") AND ("Zachman" OR "framework" OR "architecture") AND ("Kementerian" OR "Layanan Publik" OR "KBIH")
-Tahun      : 2011-2026 (15 tahun evolusi teknologi haji IS)
-Hasil awal : 5+ paper → Screening by relevance & quality → 5 paper final
+Topik      : Sistem Informasi Pelayanan Haji dan Umroh Berbasis Web
+Database   : SINTA, IEEE Xplore, Academia.edu
+Query      : ("information system" OR "sistem informasi") AND ("hajj" OR "umroh" OR "haji") AND ("web application" OR "web-based")
+Tahun      : 2021-2026
+Hasil awal : 5 paper → Screening → 5 paper final (semua relevan)
 
 Literature Matrix (concept-centric):
 
 | Study | Tahun | Method | Data | Result | Limitation |
 |-------|-------|--------|------|--------|------------|
-| SISKOHAT Effectiveness | 2015 | Qualitative Descriptive | Jawa Tengah; 17 BPS BPIH integrated; waiting list 19-20 tahun | Sangat efektif: integrasi 17 BPS, fitur lengkap (registrasi, visa, payment, manifest, monitoring), mengatasi waiting list masif | Hanya Jawa Tengah; tanpa metrik kuantitatif; tanpa kepuasan jamaah terukur |
-| Zachman Hajj Architecture | 2026 | Zachman Framework + EA Design | Kementerian Haji Sukabumi; E-Gov; akses 24/7 requirement | Pemetaan arsitektur lengkap (planning, requirements, design, technical); ERD + service strategy; design untuk transparansi & accessibility | Masih design phase; scope lokal Sukabumi; tanpa empirical validation |
-| Web Haji System KBIH | 2011 | Web-Based Development | KBIH Ar Rohman Mabrur Kudus; manual → online registration | Aplikasi web registrasi & informasi haji; akses 24/7; prosedur & aturan haji online | Single KBIH; tahun 2011 (lama); tanpa testing data; scope terbatas |
-| McCall Quality SIHAT | 2022 | McCall Quality Model + Survey | SIHAT Arraudhah Wisata Imani; 30 responden | Overall quality 41% (sufficient); Correctness 58%, Reliability 30%, Efficiency 19% | Reliability & efficiency rendah; sample kecil; satu penyedia; tanpa rekomendasi improvement |
-| Waterfall Registration | 2024 | Waterfall + CodeIgniter + MySQL | KBIH Ibnu Aqil Bogor; manual → online registration | Design sistem registrasi online, informasi jadwal/biaya, automated reporting | Design phase only; single KBIH; tanpa security/privacy analysis |
+| Bahar & Saepudin | 2026 | Framework Zachman, UML | Kemenag Sukabumi | Arsitektur sistem terstruktur 6 perspektif | Scope terbatas (haji saja) |
+| Arvita | 2021 | Prototype, UML | Travel Jambi | Sistem web registrasi + manajemen data | Belum ada evaluasi keamanan |
+| Novariadi | 2021 | Interview & Observasi | Kemenag Kuantan Singingi | E-Katalog database PHP & MySQL | Hanya katalog, bukan registrasi end-to-end |
+| Mohamad et al. | 2023 | DFD + GIS | Travel Kendari | Sistem GIS + Google Maps API | Hanya paket/lokasi, belum administrasi |
+| Maryana & Fatah | 2025 | Waterfall, UML | Kemenag Bondowoso | Pendaftaran online + verifikasi pembayaran | Masih fase desain, belum implementasi |
 
 Pola yang ditemukan:
-  Metode dominan     : Web-based system design (3/5 paper); Enterprise Architecture Zachman (terbaru 2026); Quality assessment McCall (2022)
-  Dataset umum       : Hajj service domain; case studies lokal (Jawa Tengah, Sukabumi, Kudus, Bogor); organisasi publik lokal (Kemenag, KBIH)
-  Limitasi berulang  : (1) 80% design-only; (2) Metrik operasional tidak konkret; (3) Local scope, no replication model; (4) Limited validation; (5) Quality concerns (SIHAT 41%, efficiency 19%)
+  Metode dominan     : Zachman, Waterfall, Prototype; UML/DFD; PHP-MySQL stack; Google Maps API
+  Dataset umum       : Institusi lokal (Kemenag regional, travel lokal); belum ada standardisasi dataset
+  Limitasi berulang  : Fragmentasi sistem (registrasi ≠ pembayaran ≠ GIS mapping); scope per-komponen; evaluasi terbatas
 
 GAP IDENTIFICATION
 
-Gap 1: [Jenis: Implementation + Context]
-  Deskripsi    : Zachman Framework ada di level design (Bahar 2026), tapi belum ada dokumentasi implementasi nyata dengan operational metrics terukur di local government Sukabumi
-  Bukti        : Query sistematis 2015-2026: Bahar (2026) design-only; Fahrudin (2011) & Mustaqim (2024) design-only. Hanya SISKOHAT (2015) operational tapi tanpa framework formal & tanpa metrik operasional (response time, uptime %, transparency score)
-  Signifikansi : Indonesia 34 provinsi + 300+ kabupaten. Metodologi proven di Sukabumi dapat direplika nasional. Tanpa dokumentasi implementasi dengan operational metrics, adopsi lambat karena ROI tidak terbukti
+Gap 1: [Jenis: method]
+  Deskripsi    : Tidak ada sistem terintegrasi end-to-end (registrasi + dokumen + pembayaran + pemetaan lokasi travel)
+  Bukti        : Semua 5 paper hanya mengatasi 1-2 komponen terpisah; fragmentasi data antar sistem
+  Signifikansi : Calon jamaah harus mengakses multiple platform; user experience buruk; data redundancy tinggi
 
-Gap 2: [Jenis: Method + Performance]
-  Deskripsi    : Metrik operasional untuk "transparansi" & "akses 24/7" belum teroperasional. Paper menyebutkan goals ini tapi tanpa KPI konkret (response time, uptime, satisfaction score, transparency index dengan target numerik)
-  Bukti        : Bahar 2026 menyebutkan "transparansi diharapkan meningkat" tanpa target %; McCall 2022 hanya score 41% overall tanpa transparency-specific; Munawaroh 2015 tidak ada metric
-  Signifikansi : Tanpa metrik operasional yang jelas & terukur, implementasi EA sulit dievaluasi, sulit direplikasi, & sulit dibuktikan ROI-nya kepada stakeholder publik
-
-Gap 3: [Jenis: Data]
-  Deskripsi    : Sangat sedikit data baseline kondisi SEBELUM digitalisasi. Mayoritas paper fokus pada solusi tanpa mengukur current state (waiting time, satisfaction, process cost, transparency baseline)
-  Bukti        : Paper 2024, 2026 tidak ada baseline data; Paper 2015 menyebutkan waiting list 19-20 tahun tapi tidak detail metrik lain; Paper 2011, 2022 tidak dokumentasikan baseline
-  Signifikansi : Tanpa baseline terukur, improvement claims tidak dapat divalidasi. Crucial untuk ROI analysis & justifikasi budget investasi IS. Penting untuk menunjukkan "before-after" benefit
+Gap 2: [Jenis: context]
+  Deskripsi    : Semua evaluasi pada konteks lokal regional, belum ada harmonisasi nasional
+  Bukti        : Studi di 5 kota berbeda dengan spesifikasi lokal; tidak ada perbandingan lintas-instansi
+  Signifikansi : Sulit untuk generalisasi; tidak ada best practices yang terstandarisasi di level nasional
 
 Baseline Selection:
-| Baseline | Relevansi | Representatif | SOTA? | Source |
-|----------|-----------|---------------|--------|--------|
-| SISKOHAT 2015 (Qualitative + 17 BPS BPIH Integrated) | Implementasi nyata hajj IS; proven effectiveness; skala besar (17 BPS nasional) | Mewakili integrated govt system baseline — apa yang bisa dicapai: fitur lengkap (registrasi, visa, payment, manifest, monitoring) di production | Bukan SOTA framework-wise (kualitatif 2015), tapi PROVEN EFFECTIVE in large-scale hajj operation Indonesia | Munawaroh et al. 2015 |
-| Zachman Framework 2026 (EA Design + Systematic Mapping) | Framework sistematis enterprise architecture; fokus transparansi & accessibility (24/7); terbaru & relevan untuk public e-services | Mewakili modern EA approach — best practice systematic architecture design (planning → requirements → design → technical model) | SOTA untuk EA framework (Zachman masih industry standard 2024-2026 untuk e-government) | Bahar & Saepudin 2026 |
+| Baseline | Relevansi | Representatif | Source |
+|----------|-----------|---------------|--------|
+| Zachman Framework (Bahar & Saepudin 2026) | Enterprise architecture design untuk sistem kompleks haji | Common practice 6-perspektif di organisasi besar | Bahar & Saepudin (2026) |
+| GIS + Web Integration (Mohamad et al. 2023) | Pemetaan lokasi travel + integrasi web; aspek discovery UX | Best practice industri travel dengan Google Maps API | Mohamad et al. (2023) |
 ```
 
 ---
@@ -133,20 +128,28 @@ Gunakan topik riset dari WS-02. Cari minimal 5 paper relevan menggunakan databas
 > - Tulis query Boolean yang digunakan: contoh `("object detection" OR "image classification") AND ("edge computing") NOT ("medical")`. Dokumentasikan query secara eksplisit.
 > - Akses gratis: buka Google Scholar → cari judul paper → klik [PDF] jika tersedia, atau akses lewat campus VPN
 
-**Topik riset:** Desain Arsitektur Sistem Informasi Layanan Haji menggunakan Enterprise Architecture (Zachman Framework) untuk Transparansi & Akses Informasi 24/7
-**Query pencarian:** ("Sistem Informasi Haji" OR "Hajj Information System") AND ("Zachman" OR "framework" OR "architecture" OR "web") AND ("Kementerian" OR "Layanan Publik" OR "KBIH")
-**Database:** ResearchGate, Google Scholar, Institutional Repository Universitas, DOI/Jurnal Online
+**Topik riset:** Sistem Informasi Pelayanan Haji dan Umroh Berbasis Web
+**Query pencarian:** ("information system" OR "sistem informasi") AND ("hajj" OR "umroh" OR "haji") AND ("web application" OR "web-based")
+**Database:** SINTA, IEEE Xplore, Academia.edu
 
-| # | Study | Tahun | Method | Dataset/Context | Result | Limitasi |
-|---|-------|-------|--------|-----------------|--------|----------|
-| 1 | Munawaroh et al. "Efektivitas SISKOHAT dalam Penyelenggaraan Ibadah Haji" | 2015 | Qualitative Descriptive | Kanwil Kemenag Jawa Tengah; 17 BPS BPIH integrated | SISKOHAT sangat efektif: integrasi 17 BPS BPIH, fitur lengkap (registrasi, visa, payment, manifest, monitoring), mengatasi waiting list 19-20 tahun | Hanya Jawa Tengah; tanpa metrik kuantitatif; tanpa kepuasan jamaah terukur |
-| 2 | Bahar & Saepudin "Aplikasi Web Informasi Layanan Haji... Zachman Framework" | 2026 | Zachman Enterprise Architecture Framework + System Design | Kementerian Haji & Umrah Sukabumi; E-Government; akses 24/7 | Pemetaan arsitektur Zachman lengkap (planning, business requirements, system design, technical model); design untuk transparansi & accessibility online | Masih design phase (belum implementasi); scope lokal Sukabumi; tanpa empirical validation |
-| 3 | Fahrudin et al. "Pembangunan Sistem Informasi Layanan Haji Berbasis Web... KBIH" | 2011 | Web-Based System Development + System Design | KBIH Ar Rohman Mabrur Kudus; manual process → online registration | Aplikasi web untuk registrasi & informasi haji; mudah diakses 24/7; prosedur & aturan haji tersedia online | Single KBIH only; tahun 2011 (teknologi lama); tanpa system testing data |
-| 4 | Farisi et al. "Analisis Kualitas Sistem Informasi Haji Terpadu (SIHAT)... McCall Model" | 2022 | McCall Software Quality Model + Survey Questionnaire | SIHAT PT. Arraudhah Wisata Imani; 30 responden; Quality measurement | Overall quality 41% (sufficient); Correctness 58%, Reliability 30%, Efficiency 19% | Reliability & efficiency sangat rendah (30%, 19%); sample kecil (30 responden); satu penyedia haji saja |
-| 5 | Mustaqim & Prayitno "Perancangan Sistem Informasi Pendaftaran Haji & Umrah... Waterfall" | 2024 | Waterfall Software Development; CodeIgniter + MySQL; Interview & Observation | KBIH Ibnu Aqil Agus Salim Bogor; manual registration → online system; reporting automation | Design sistem registrasi online, informasi jadwal/biaya, automated reporting; expected to improve efficiency | Design phase only (bukan implementasi); single KBIH; tanpa security/privacy analysis |
+| # | Study | Tahun | Method | Dataset | Result | Limitasi |
+|---|-------|-------|--------|---------|--------|----------|
+| 1 | Bahar & Saepudin | 2026 | Framework Zachman, UML | Kemenag Sukabumi | Arsitektur sistem terstruktur (Scope, Owner, Designer, Implementation, Technology, Function) | Hanya fokus aspek haji (tidak termasuk manasik, transportasi, kesehatan) |
+| 2 | Arvita | 2021 | Prototype, UML (Usecase, Class, Activity) | Travel Jambi | Sistem web fungsional dengan fitur registrasi, manajemen data, laporan | Belum ada evaluasi keamanan data |
+| 3 | Novariadi | 2021 | Interview, Observasi, Studi Pustaka | Kemenag Kuantan Singingi | E-Katalog database dengan PHP & MySQL | Hanya fokus pada katalog/pengarsipan, tidak mencakup proses pendaftaran |
+| 4 | Mohamad et al. | 2023 | Data Flow Diagram (DFD) | Travel Kendari | Sistem dengan GIS + Google Maps API untuk pemetaan lokasi travel | Hanya info paket/lokasi, tidak terintegrasi dengan proses administrasi jamaah |
+| 5 | Maryana & Fatah | 2025 | Waterfall, UML | Kemenag Bondowoso | Sistem pendaftaran online dengan formulir digital & verifikasi pembayaran | Masih dalam fase desain, belum implementasi penuh |
 
-**Pola yang terlihat — Metode dominan:** Web-based system (3/5 paper) + Enterprise Architecture Zachman (2026, terbaru) + Quality Assessment McCall (2022). SISKOHAT (2015) baseline proven operational nasional.
-**Limitasi yang berulang:** (1) 80% masih design-only; (2) Metrik operasional transparansi/efficiency tidak konkret; (3) Local scope, no replication model; (4) Limited validation (UAT, long-term monitoring); (5) Quality concerns (SIHAT 41% overall, efficiency 19%)
+**Pola yang terlihat — Metode dominan:** 
+- **Framework/Methodology:** Zachman, Waterfall, Prototype (Iteratif), DFD
+- **Technology Stack:** PHP, MySQL, Google Maps API, UML/BPMN untuk modeling
+- **Domain fokus:** Web information system, e-registration, document management, geographic information
+
+**Limitasi yang berulang:** 
+- Scope terbatas (hanya satu aspek dari proses haji/umroh yang komprehensif)
+- Belum ada integrasi end-to-end antara registrasi, pembayaran, dokumentasi, dan pemetaan lokasi travel
+- Aspek keamanan data dan integrasi API pihak ketiga kurang dibahas
+- Evaluasi sistem (testing, user satisfaction) masih minimal
 
 ---
 
@@ -156,16 +159,14 @@ Berdasarkan tabel di Latihan 1, identifikasi gap.
 
 | Jenis Gap | Ditemukan? | Gap Statement |
 |-----------|-----------|---------------|
-| Performance Gap | [X] Ya / [ ] Tidak | McCall study (2022) menunjukkan SIHAT hanya 41% quality; Efficiency 19% sangat rendah. SISKOHAT (2015) proven effective tapi tanpa metrik operasional. **Gap: implementasi EA Zachman belum memiliki proven performance metrics (response time, uptime, transparency index) di production** |
-| Method Gap | [X] Ya / [ ] Tidak | Zachman Framework ada (Paper 2, 2026), tapi **belum ada metodologi operasional yang mengintegrasikan: (1) Architecture design, (2) Quality metrics, (3) User satisfaction, (4) Implementation roadmap** dalam satu framework terstruktur untuk hajj service |
-| Data Gap | [X] Ya / [ ] Tidak | **Sangat sedikit data baseline kondisi SEBELUM digitalisasi**. Paper fokus pada solusi tapi tidak dokumentasikan: waiting time baseline, current satisfaction, current process cost, current transparency level. Krusial untuk measuring improvement |
-| Context Gap | [X] Ya / [ ] Tidak | Implementasi EA (Zachman) ada di negara maju, ada di hajj service Indonesia (SISKOHAT), tapi **belum ada adaptasi systematik untuk Kementerian Haji lokal dengan resource constraints Sukabumi** dengan operasional metrics jelas |
+| Performance Gap | [x] Ya / [ ] Tidak | Hanya 3 dari 5 sistem mencapai implementasi penuh; 2 sistem masih dalam fase desain (prototype/belum production-ready). Tidak ada data tentang akurasi validasi data atau response time sistem |
+| Method Gap | [x] Ya / [ ] Tidak | Tidak ada studi yang mengintegrasikan seluruh framework (registrasi + dokumentasi + pembayaran + GIS mapping) dalam satu sistem terpadu. Setiap studi hanya mengatasi satu atau dua komponen |
+| Data Gap | [x] Ya / [ ] Tidak | Belum ada dataset publik atau benchmark untuk sistem informasi haji. Semua studi menggunakan data lokal dari satu institusi (Kemenag atau travel lokal) tanpa generalisasi |
+| Context Gap | [x] Ya / [ ] Tidak | Semua studi dilakukan pada konteks lokal (Sukabumi, Jambi, Kuantan Singingi, Kendari, Bondowoso). Belum ada evaluasi di level nasional atau perbandingan lintas-instansi |
 
-**Gap utama yang dipilih:** Kombinasi Method Gap + Context Gap + Performance Gap
-- **Fokus:** Metodologi operasional untuk implementasi Zachman Framework di Kementerian Haji Sukabumi yang menghasilkan sistem dengan performance metrics terukur (response time <5s, uptime >99%, transparency score 80+, user satisfaction >4/5)
-
+**Gap utama yang dipilih:** Method Gap — Integrasi end-to-end sistem informasi haji yang mencakup registrasi, manajemen dokumen, verifikasi pembayaran, dan pemetaan lokasi travel dalam satu platform terpadu
 **Mengapa gap ini penting (bukan sekadar "belum ada yang meneliti")?**
-> SISKOHAT (2015) buktikan hajj IS dapat berfungsi nasional & effective; Zachman Framework (2026) mapping tersedia untuk Sukabumi; McCall (2022) tunjukkan quality gaps. **GAP INI PENTING KARENA:** (1) Indonesia punya 34 provinsi + 300+ kabupaten — metodologi proven di Sukabumi bisa direplika ke seluruh Kemenag lokal; (2) Layanan haji prioritas nasional (jutaan jamaah/tahun) — improvement transparansi & akses berdampak ekonomi & kepuasan sosial; (3) SIHAT hanya 41% quality (efficiency 19%) — perbaikan metodologi berbasis Zachman dapat meningkatkan kualitas sistematis; (4) Belum ada dokumentasi cara meng-operasionalkan Zachman Framework dengan KPI konkret (response time, transparency index, satisfaction score) di public sector lokal dengan budget terbatas. Tanpa ini, Kepala Daerah/Menag lokal enggan adopt karena ROI tidak terbukti.
+> Fragmentasi sistem saat ini menyebabkan calon jamaah harus mengakses multiple systems untuk registrasi (di Kemenag), pembayaran (di travel), dan informasi lokasi (di Google Maps atau web travel). Integrasi terpadu akan meningkatkan user experience, mengurangi data redundancy, dan memfasilitasi transparansi end-to-end dari proses pendaftaran hingga keberangkatan.
 
 ---
 
@@ -175,11 +176,11 @@ Pilih 2 baseline dari literatur yang sudah dibaca.
 
 | # | Baseline | Mengapa Relevan | Mengapa Representatif | Apakah SOTA? | Sumber |
 |---|----------|----------------|----------------------|-------------|--------|
-| 1 | **SISKOHAT 2015 (Qualitative Descriptive + Integrated 17 BPS BPIH)** | Implementasi nyata hajj IS di Kemenag; proven effectiveness mengatasi waiting list 19-20 tahun; skala besar (17 BPS terintegrasi) | **Representatif untuk integrated govt system baseline** — menunjukkan apa yang bisa dicapai: fitur lengkap (registrasi, visa, payment, manifest, health monitoring, flight monitoring) | Bukan SOTA framework-wise (method kualitatif, 2015), tapi **PROVEN EFFECTIVE in large-scale hajj operation** di Indonesia | Munawaroh et al. 2015 |
-| 2 | **Zachman Framework 2026 (EA Design + Systematic Mapping + Service Strategy)** | Framework sistematis enterprise architecture; fokus transparansi & accessibility (24/7); terbaru & relevan untuk public e-services | **Representatif untuk modern EA approach** — mewakili best practice systematic architecture design (planning → business requirements → system design → technical model) | **SOTA untuk EA framework** (Zachman masih industry standard 2024-2026 untuk e-government) | Bahar & Saepudin 2026 |
+| 1 | Framework Zachman untuk Enterprise Architecture Design (Bahar & Saepudin 2026) | Secara langsung mengatasi desain arsitektur sistem haji yang kompleks, mencakup perspektif Planner, Owner, Designer, dan Implementation | Digunakan oleh organisasi besar (Kemenag Sukabumi) sebagai framework standard untuk enterprise systems; 6 perspektif Zachman menjadi common practice | Ya, SOTA: publikasi 2026 dan menggunakan framework yang paling terstruktur untuk pemetaan arsitektur | Bahar & Saepudin (2026), SINTA |
+| 2 | Sistem Informasi Geografis + Web Integration untuk Travel Information (Mohamad et al. 2023) | Menambahkan dimensi geografis (pemetaan lokasi travel dengan Google Maps API) yang belum ada di studi lainnya; merepresentasikan aspek "discovery" dalam UX | Kombinasi GIS + web framework menjadi best practice di industri travel; diaplikasikan di multiple travel agencies (Kendari region) | SOTA: publikasi 2023 dengan teknologi mutakhir (Google Maps API + PHP/MySQL stack yang masih relevan) | Mohamad et al. (2023), JSITK |
 
-**Apakah pemilihan baseline ini bisa dianggap straw man?** [ ] Ya / [X] Tidak
-> Justifikasi: **Bukan straw man — kedua baseline complementary & rigorous:** (1) SISKOHAT 2015 = proof-of-concept bahwa hajj IS work di Indonesia skala besar, tapi tanpa framework sistematis & tanpa metrik operasional konkret; (2) Zachman 2026 = methodology sistematis untuk design architecture tapi belum terbukti implementable dengan metrik operasional yang jelas. **Penelitian ini akan:** Implementasi Zachman Framework (baseline 2) dengan metodologi operasional (KPI konkret) yang validated pada case SISKOHAT (baseline 1). Hasilnya: proven-in-practice Zachman methodology untuk hajj IS di local government context. Ini adalah **evolution of baselines**, bukan pengecilan artificial untuk membuat method sendiri terlihat baik.
+**Apakah pemilihan baseline ini bisa dianggap straw man?** [ ] Ya / [x] Tidak
+> Justifikasi: Kedua baseline dipilih karena (1) representasi dari metodologi mainstream (Zachman, GIS), (2) publikasi terbaru (2023-2026), (3) aplikasi pada konteks nyata (institusi haji dan travel), dan (4) komplementer (satu fokus pada architecture, satu fokus pada geographic discovery). Keduanya mengatasi gap yang berbeda dalam sistem informasi haji.
 
 ---
 
@@ -188,18 +189,15 @@ Pilih 2 baseline dari literatur yang sudah dibaca.
 > Apa perbedaan antara "belum ada yang meneliti ini" (klaim tanpa bukti) dengan research gap yang valid? Bagaimana cara membuktikan bahwa sebuah gap benar-benar ada?
 
 **Jawaban:**
-
-**"Belum ada yang meneliti ini" (klaim tanpa bukti):** Pernyataan vague tanpa dokumentasi pencarian. Contoh: "Belum ada yang menerapkan Zachman di Indonesia" — tanpa query Boolean, database mana yang dicari, atau paper apa yang sudah direview. Ini **tidak sah akademis** karena tidak dapat diverifikasi.
-
-**Research gap yang valid:** Pernyataan spesifik didukung bukti literatur sistematis. Contoh: "Dari query Boolean ('Zachman' OR 'EA') AND ('e-government') AND ('Indonesia') di Google Scholar, IEEE, Scopus (2015-2025), ditemukan 0 paper tentang implementasi Zachman di local government Sukabumi dengan operational metrics. Sebaliknya, di level nasional ada SISKOHAT (2015) dan di level design ada Bahar 2026. Gap: **metodologi operasional untuk implementasi EA dengan KPI konkret di local government belum terdokumentasi**."
-
-**Cara membuktikan gap benar-benar ada:**
-1. **Pencarian sistematis terdokumentasi:** Query Boolean spesifik, database yang digunakan, rentang tahun, jumlah hasil & hasil filter
-2. **Backward & Forward snowballing:** Lacak referensi paper kunci; cari paper yang mengutip paper kunci (Google Scholar "Cited by")
-3. **Analisis pola literatur:** Tabel concept-centric yang membandingkan metode, dataset, konteks di setiap paper. Pola yang berulang menunjukkan limitasi umum
-4. **Kontrastif (bukan negatif):** Jangan hanya bilang "belum ada," tetapi "ada di konteks X, tetapi tidak di konteks Y yang relevan dengan riset ini"
-5. **Signifikansi & Impact:** Jelaskan **mengapa** gap ini penting — dampaknya bagi teori, praktik, atau masyarakat. Contoh: "Indonesia 34 provinsi × 300+ kabupaten — metodologi proven di Sukabumi bisa direplika nasional"
-
-**Contoh dari WS-03 Anda:**
-- **Klaim tanpa bukti:** "Belum ada yang meneliti Zachman untuk haji di Indonesia"
-- **Gap yang valid:** "Ada SISKOHAT (2015) proven effective tapi tanpa framework formal; ada Zachman mapping (2026) tapi design-only; ada McCall quality assessment (2022) tapi 41% score. **Gap: metodologi operasional yang mengintegrasikan systematic design (Zachman) + quality metrics (KPI operasional) + proven implementation dalam 1 framework untuk local government hajj service belum ada**. Ini penting karena Indonesia punya 300+ kabupaten dengan kebutuhan serupa — perlu metodologi yang replicable & measurable untuk adopt EA di public sector lokal."
+> **Perbedaan Fundamental:**
+> - **"Belum ada yang meneliti" (tanpa bukti):** Sebuah klaim yang tidak didukung oleh dokumentasi pencarian sistematis. Peneliti tidak menunjukkan query yang digunakan, database yang dicek, atau kriteria inklusi/eksklusi. Ini jatuh kategori "absence of evidence is not evidence of absence."
+> - **Research gap yang valid:** Didukung oleh bukti pencarian terstruktur (documented query, database list, snowballing), analisis pola dari literature existing, dan identifikasi kontras antara "apa yang sudah dilakukan" vs "apa yang belum atau tidak optimal."
+>
+> **Cara Membuktikan Gap Benar-Benar Ada:**
+> 1. **Systematic Search (Backward Snowballing):** Mulai dari paper kunci (contoh: Bahar & Saepudin 2026 untuk Zachman framework haji), telusuri referensi mereka, dan dokumentasikan semua paper terkait. Ulangi 1-2 tingkat.
+> 2. **Snowballing Maju (Forward Citation):** Di Google Scholar, lihat "Cited by" dari paper kunci → temukan paper yang membangun di atasnya → catat apakah ada yang mengatasi gap atau justru mewariskan limitation.
+> 3. **Analisis Pola dari 5+ Paper:** Seperti pada latihan ini: semua 5 paper menunjukkan fragmentasi (registrasi terpisah dari GIS, dari dokumentasi). Ini bukan coincidence — ini adalah pattern yang menunjukkan gap metodologis yang genuine.
+> 4. **Context Gap Confirmation:** Verifikasi bahwa gap tidak hanya berada di akademia, tetapi juga di praktik industri. Contoh: wawancara dengan staff Kemenag atau travel agencies akan membuktikan bahwa sistem saat ini memang terpisah-pisah.
+> 5. **Dokumentasi Eksplisit:** Tulis: "Query: [...], Database: [IEEE, SINTA, ...], Tahun: [2018-2026], Hasil: [X paper menemukan A, Y paper menemukan B, tetapi tidak ada yang mengintegrasikan A+B]."
+>
+> **Kesimpulan:** Gap yang valid bukan sekadar "belum diteliti," tetapi "ada kontradiksi, fragmentasi, atau limitation yang teridentifikasi melalui bukti empiris dari literature existing dan diperkuat oleh context praktis di lapangan."
